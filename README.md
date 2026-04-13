@@ -34,12 +34,10 @@ This implementation directly enforces controls from global cybersecurity framewo
 ## **Proof of Enforcement**
 
 ### 1. Mandatory Guardrail Enforcement
-Below is an attempt by the Junior Admin to create a user *without* attaching the required Permissions Boundary. The request is denied by the **Condition Trap** in the identity policy.
-![Access Denied - Missing Boundary](Screenshots/User_Creation_Without_Permissions_Boundary_Denied.png)
+Below is an attempt by the Junior Admin to create a user *without* attaching the required Permissions Boundary. The request is denied by the **Condition Trap** in the identity policy. [Access Denied - Missing Boundary](Screenshots/User_Creation_Without_Permissions_Boundary_Denied.png)
 
 ### 2. Privilege Escalation Blocked
-In this scenario, the Junior Admin successfully initiated user creation but attempted to attach the `AdministratorAccess` policy. While the user was created, the boundary triggered an **Explicit Deny** on the policy attachment, effectively neutering the account.
-![Successful Creation - Blocked Admin](Screenshots/Successful_User_Creation_Blocking_Privilege_Escalation.png)
+In this scenario, the Junior Admin successfully initiated user creation but attempted to attach the `AdministratorAccess` policy. While the user was created, the boundary triggered an **Explicit Deny** on the policy attachment, effectively neutering the account. [Successful Creation - Blocked Admin](Screenshots/Successful_User_Creation_Blocking_Privilege_Escalation.png)
 
 ---
 

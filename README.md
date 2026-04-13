@@ -41,7 +41,7 @@ In this scenario, the Junior Admin successfully initiated user creation but atte
 
 ---
 
-## 📄 Policy Configurations
+## Policy Configurations
 
 ### A. Global-GRC-Boundary
 This policy defines the absolute maximum permissions any delegated user or role can ever exercise. Even if an identity policy says "Allow All," this boundary acts as a filter.
